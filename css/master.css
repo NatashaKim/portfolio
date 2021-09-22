@@ -23,7 +23,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   /* cursor: none; */
-  /* background-image: url(../img/Desktop-21.png); */
 }
 
 * {
@@ -72,6 +71,10 @@ a {
   margin-left: 4vw;
 }
 
+.cover_middle img {
+  width: 71.3vw;
+}
+
 .cover_middle .cover_title {
   height: fit-content;
   margin-top: -6.8vw;
@@ -89,14 +92,6 @@ a {
   align-items: center;
   line-height: 3vw;
   padding-top: 0.8vw;
-}
-
-@media (min-width: 1600px) {
-  .cover_middle .cover_title .portfolio,
-  .cover_middle .cover_title .hse,
-  .cover_right span {
-    font-size: 36px;
-  }
 }
 
 .cover_middle .cover_title .portfolio {
@@ -125,7 +120,7 @@ a {
   width: fit-content;
   padding-right: 2vw;
   display: block;
-  transform: translate(-32px, 49px) rotate(-90deg);
+  transform: translate(-2.3vw, 3.5vw) rotate(-90deg);
   color: var(--black);
 }
 
@@ -341,10 +336,11 @@ a {
 footer {
   background-image: url(../img/footer.svg);
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: space-between;
   margin: 8.4vw 3.1vw;
-  height: 12vw;
+  height: 11.5vw;
 }
 
 footer a {
@@ -371,4 +367,18 @@ footer a:nth-child(3) {
   margin: 2vw 6vw 2vw 4vw;
   padding-right: 2.2vw;
   width: 22vw;
+}
+
+@media (min-width: 1600px) {
+  .cover_middle .cover_title .portfolio,
+  .cover_middle .cover_title .hse,
+  .cover_right span {
+    font-size: 36px;
+  }
+  .text .neue {
+    font-size: 64px;
+  }
+  .text .vesterbro {
+    font-size: 72px;
+  }
 }
