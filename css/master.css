@@ -355,6 +355,10 @@ footer a:nth-child(1) {
   width: 22vw;
 }
 
+footer a:nth-child(1) img {
+  width: 8vw;
+}
+
 footer a:nth-child(2) {
   width: 22vw;
 }
@@ -367,6 +371,10 @@ footer a:nth-child(3) {
   margin: 2vw 6vw 2vw 4vw;
   padding-right: 2.2vw;
   width: 22vw;
+}
+
+footer a:nth-child(3) img {
+  width: 7vw;
 }
 
 @media (min-width: 1600px) {
