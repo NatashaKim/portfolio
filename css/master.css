@@ -1,0 +1,374 @@
+@import "reset.css";
+@font-face {
+  font-family: "Neue Haas Unica";
+  src: url("../fonts/NeueHaasUnica-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Vesterbro";
+  src: url("../fonts/Vesterbro-LightItalic.woff") format("woff");
+}
+
+:root {
+  --main-color: #faf7ee;
+  --black: #010112;
+}
+
+body {
+  font-family: "Neue Haas Unica";
+  color: var(--black);
+  background-color: var(--main-color);
+  background-repeat: no-repeat;
+  background-size: auto;
+  box-sizing: border-box;
+  margin: 0;
+  /* cursor: none; */
+  /* background-image: url(../img/Desktop-21.png); */
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+  cursor: pointer;
+  display: block;
+}
+
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+
+.cover {
+  height: 47vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cover_left {
+  width: 9vw;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  margin-top: 2.3vw;
+}
+
+.cover_left img {
+  width: 2.8vw;
+  height: fit-content;
+}
+
+.cover_middle {
+  width: 80vw;
+  margin-top: 8.5vw;
+  margin-left: 4vw;
+}
+
+.cover_middle .cover_title {
+  height: fit-content;
+  margin-top: -6.8vw;
+  display: flex;
+}
+
+.cover_middle .cover_title .portfolio,
+.cover_middle .cover_title .hse {
+  display: flex;
+  height: 6.1vw;
+  border: 2px solid black;
+  border-radius: 3.05vw;
+  font-size: 2.2vw;
+  justify-content: center;
+  align-items: center;
+  line-height: 3vw;
+  padding-top: 0.8vw;
+}
+
+@media (min-width: 1600px) {
+  .cover_middle .cover_title .portfolio,
+  .cover_middle .cover_title .hse,
+  .cover_right span {
+    font-size: 36px;
+  }
+}
+
+.cover_middle .cover_title .portfolio {
+  width: 21vw;
+}
+
+.cover_middle .cover_title .hse {
+  margin-left: -1.2vw;
+  width: 39.5vw;
+}
+
+.cover_right {
+  width: 11vw;
+  padding: 2.6vw 3vw 0 4vw;
+  flex-direction: column;
+  display: flex;
+  align-content: center;
+}
+
+.cover_right img {
+  width: 3.5vw;
+}
+
+.cover_right a {
+  font-size: 2.2vw;
+  width: fit-content;
+  padding-right: 2vw;
+  display: block;
+  transform: translate(-32px, 49px) rotate(-90deg);
+  color: var(--black);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin: 8.4vw 3.1vw 9.6vw;
+}
+
+.cards a {
+  height: 30.4vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.9vw;
+}
+
+.text {
+  color: var(--black);
+}
+
+.text .neue {
+  font-size: 4vw;
+  text-align: center;
+}
+
+.text .vesterbro {
+  font-size: 4.5vw;
+  line-height: 4.2vw;
+  font-family: "Vesterbro";
+  text-align: center;
+}
+
+.oro {
+  background-image: url(../img/card_oro.svg);
+}
+
+.oro:hover {
+  background-image: url(../img/oro.png);
+}
+
+.oro:hover .text,
+.unleash:hover .text,
+.coroone .design_system:hover .text,
+.coroone .identity:hover .text,
+.cosmoopera .promo-site:hover .text,
+.cosmoopera .web-poster:hover .text,
+.longread:hover .text,
+.landing:hover .text,
+.edge_of_universe:hover .text,
+.book:hover .text {
+  display: none;
+}
+
+.oro .text .neue {
+  margin-right: 1vw;
+}
+
+.unleash {
+  background-image: url(../img/card_unleash.svg);
+}
+
+.unleash .text {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.8vw;
+}
+
+.unleash:hover {
+  background-image: url(../img/unleash.png);
+}
+
+.coroone {
+  height: 59.4vw;
+  background-size: cover;
+  background-image: url(../img/card_coroone.svg);
+  margin-bottom: 3.9vw;
+}
+
+.coroone .design_system {
+  height: 44.3vw;
+  padding-top: 11.8vw;
+  align-items: flex-start;
+}
+
+.coroone .design_system:hover {
+  background-image: url(../img/design_system.png);
+}
+
+.coroone .design_system .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.coroone .design_system .text div .neue {
+  margin-right: 1vw;
+}
+
+.coroone .identity {
+  margin-top: -19.2vw;
+}
+
+.coroone .identity:hover {
+  background-image: url(../img/identity.png);
+}
+
+.coroone .identity .text .vesterbro {
+  margin-right: 1vw;
+}
+
+.cosmoopera {
+  height: 30.4vw;
+  background-size: cover;
+  background-image: url(../img/card_cosmoopera.svg);
+  margin-bottom: 3.9vw;
+  display: flex;
+}
+
+.cosmoopera .promo-site {
+  width: 78.6vw;
+  justify-content: flex-start;
+}
+
+.cosmoopera .promo-site:hover {
+  background-image: url(../img/promo-site.png);
+}
+
+.cosmoopera .promo-site .text {
+  width: 43vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8vw;
+}
+
+.cosmoopera .web-poster {
+  width: 30.6vw;
+  margin-left: -15.4vw;
+  flex-direction: column;
+}
+
+.cosmoopera .web-poster:hover {
+  background-image: url(../img/web-poster.png);
+}
+
+.cosmoopera .web-poster .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.horisontal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.horisontal a {
+  width: 46.2vw;
+}
+
+.horisontal .longread {
+  background-image: url(../img/card_longread.svg);
+}
+
+.longread .text,
+.landing .text {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.longread:hover {
+  background-image: url(../img/longread.png);
+}
+
+.horisontal .landing {
+  background-image: url(../img/card_landing.svg);
+}
+
+.landing:hover {
+  background-image: url(../img/landing.png);
+}
+
+.edge_of_universe {
+  background-image: url(../img/card_edge_of_universe.svg);
+}
+
+.edge_of_universe .text {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.edge_of_universe:hover {
+  background-image: url(../img/edge_of_universe.png);
+}
+
+.book {
+  background-image: url(../img/card_book.svg);
+}
+
+.book .text {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.book:hover {
+  background-image: url(../img/book.png);
+}
+
+footer {
+  background-image: url(../img/footer.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  margin: 8.4vw 3.1vw;
+  height: 12vw;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a:nth-child(1) {
+  margin: 2vw 4vw 2vw 6vw;
+  padding-left: 2.2vw;
+  width: 22vw;
+}
+
+footer a:nth-child(2) {
+  width: 22vw;
+}
+
+footer a:nth-child(2) img {
+  width: 13vw;
+}
+
+footer a:nth-child(3) {
+  margin: 2vw 6vw 2vw 4vw;
+  padding-right: 2.2vw;
+  width: 22vw;
+}
