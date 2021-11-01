@@ -96,11 +96,13 @@ a {
 
 .cover_middle .cover_title .portfolio {
   width: 21vw;
+  color: var(--black);
 }
 
 .cover_middle .cover_title .hse {
   margin-left: -1.2vw;
   width: 39.5vw;
+  color: var(--black);
 }
 
 .cover_right {
