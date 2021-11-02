@@ -170,6 +170,7 @@ a {
 .unleash:hover .text,
 .coroone .design_system:hover .text,
 .coroone .identity:hover .text,
+.synth:hover .text,
 .cosmoopera .promo-site:hover .text,
 .cosmoopera .web-poster:hover .text,
 .longread:hover .text,
@@ -233,6 +234,18 @@ a {
 }
 
 .coroone .identity .text .vesterbro {
+  margin-right: 1vw;
+}
+
+.synth {
+  background-image: url(../img/card_synth.svg);
+}
+
+.synth:hover {
+  background-image: url(../img/synth.png);
+}
+
+.synth .text .vesterbro {
   margin-right: 1vw;
 }
 
